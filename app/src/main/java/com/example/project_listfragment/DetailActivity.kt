@@ -29,8 +29,7 @@ class DetailActivity : AppCompatActivity() {
         super.onResume()
 
         val fragment: DetailFragment =
-            supportFragmentManager.findFragmentById(R.id.detailFragment) as
-                    DetailFragment
-        fragment?.setSelectedItem(selectedItem)
+            supportFragmentManager.findFragmentById(R.id.detailFragment) as DetailFragment
+        fragment.setSelectedItem(selectedItem)
     }
 }
